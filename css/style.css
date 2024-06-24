@@ -189,8 +189,9 @@
 }
 .hero .hero-text h1 {
   width: 50%;
-  font-size: 56px;
+  font-size: 50px;
   padding-right: 10%;
+  text-transform: uppercase;
 }
 .hero .hero-text p {
   width: 50%;
@@ -212,7 +213,7 @@
     flex-direction: column;
   }
   .hero .hero-text h1 {
-    font-size: 44px;
+    font-size: 40px;
     width: 100%;
   }
   .hero .hero-text p {
@@ -228,7 +229,7 @@
     flex-direction: column;
   }
   .hero .hero-text h1 {
-    font-size: 34px;
+    font-size: 28px;
     width: 100%;
   }
   .hero .hero-text p {
@@ -327,15 +328,18 @@
   }
 }
 .goal {
+  margin-bottom: 100px;
   width: 100%;
 }
 .goal .goal-info {
   width: 100%;
   border-top: 2px solid rgba(128, 128, 128, 0.233);
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
   gap: 30px;
   padding: 30px 0;
+}
+.goal .goal-info .about-name {
+  width: 30%;
 }
 .goal .goal-info .about-name .about-name__text {
   display: flex;
@@ -352,8 +356,265 @@
   font-size: 22px;
   font-family: monospace;
 }
+.goal .goal-info .goal-info__title {
+  text-transform: uppercase;
+}
 .goal .goal-main {
   width: 100%;
+  display: flex;
+  gap: 30px;
+}
+.goal .goal-main .goal-main__left {
+  width: 30%;
+}
+.goal .goal-main .goal-main__right {
+  width: 70%;
+  display: flex;
+  gap: 30px;
+}
+.goal .goal-main .goal-main__right .goal-main__right__img {
+  padding: 40px 0;
+  width: 25%;
+  background-color: #F5F5F5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.goal .goal-main .goal-main__right .goal-main__right__img img {
+  width: 70%;
+}
+.goal .goal-main .goal-main__right .goal-main__right__items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.goal .goal-main .goal-main__right .goal-main__right__items .goal-main__right__item {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.goal .goal-main .goal-main__right .goal-main__right__items .goal-main__right__item p {
+  font-size: 16px;
+  font-family: monospace;
+}
+.goal .goal-main .goal-main__right .goal-main__right__items .goal-main__right__item .goal-btn {
+  padding: 5px 20px;
+  border-radius: 20px;
+}
+
+@media (max-width: 1124px) {
+  .goal .goal-mainn .goal-main__right .goal-main__right__items {
+    gap: 2px;
+  }
+}
+.talim {
+  width: 100%;
+  padding-bottom: 100px;
+}
+.talim .talim-info {
+  width: 100%;
+  border-top: 2px solid rgba(128, 128, 128, 0.233);
+  display: flex;
+  gap: 30px;
+  padding: 30px 0;
+}
+.talim .talim-info .about-name {
+  width: 30%;
+}
+.talim .talim-info .about-name .about-name__text {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.talim .talim-info .about-name .about-name__text span {
+  width: 22px;
+  min-width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: #184AFB;
+}
+.talim .talim-info .about-name .about-name__text p {
+  font-size: 22px;
+  font-family: monospace;
+}
+.talim .talim-info .about-info h1 {
+  text-transform: uppercase;
+}
+.talim .talim-items {
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(2, 1fr 2fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+.talim .talim-items .talim-item {
+  border: 1px solid rgba(128, 128, 128, 0.349);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.talim .talim-items .talim-item h3 {
+  font-weight: 100;
+  font-size: 24px;
+}
+.talim .talim-items .talim-item img {
+  width: 80%;
+}
+.talim .talim-items .talim-item ul li a {
+  display: flex;
+  gap: 15px;
+  color: #184AFB;
+}
+.talim .talim-cards {
+  width: 100%;
+  padding-left: 32%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  row-gap: 50px;
+}
+.talim .talim-cards .talim-card {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: start;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.411);
+}
+.talim .talim-cards .talim-card span {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F5F5F5;
+}
+.talim .talim-cards .talim-card span img {
+  width: 60%;
+}
+.talim .talim-cards .talim-card .imkoniyatlar1 {
+  border-radius: 15px;
+}
+.talim .talim-cards .talim-card .imkoniyatlar2 {
+  border-radius: 25px 10px;
+}
+.talim .talim-cards .talim-card .imkoniyatlar3 {
+  border-radius: 25px;
+}
+.talim .talim-cards .talim-card .imkoniyatlar4 {
+  border-radius: 50%;
+}
+.talim .talim-cards .talim-card p {
+  font-size: 18px;
+  color: rgba(46, 48, 56, 0.6);
+}
+.talim .talim-boxes {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.talim .talim-boxes .talim-box {
+  background-color: #F5F5F5;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  gap: 30px;
+}
+.talim .talim-boxes .talim-box img {
+  width: 40%;
+  cursor: pointer;
+}
+.talim .talim-boxes .talim-box .talim-box__text {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+.talim .chanse-cards {
+  width: 100%;
+  padding-left: 32%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.talim .chanse-cards .chanse-card {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  border-radius: 10px;
+  border: 2px solid rgba(128, 128, 128, 0.233);
+  padding: 25px 15px;
+}
+.talim .chanse-cards .chanse-card .chanse-card__img {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 200px;
+}
+.talim .chanse-cards .chanse-card .chanse-card__img img {
+  width: 90%;
+}
+.talim .chanse-cards .chanse-card .chanse-card__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+.talim .xalqaro-items {
+  display: flex;
+}
+.talim .xalqaro-items .xalqaro-img {
+  width: 60%;
+}
+.talim .xalqaro-items .xalqaro-img img {
+  width: 100%;
+  border-radius: 15px;
+}
+.talim .xalqaro-items .xalqaro-info {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.talim .xalqaro-items .xalqaro-info .xalqaro-info__item {
+  height: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (max-width: 992px) {
+  .talim .chanse-cards {
+    padding-left: 0;
+  }
+}
+@media (max-width: 768px) {
+  .talim .talim-info {
+    flex-direction: column;
+  }
+  .talim .talim-info .about-info h1 {
+    font-size: 23px;
+  }
+  .talim .talim-items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .talim .talim-cards, .talim .talim-boxes {
+    padding-left: 0;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .talim .talim-boxes .talim-box img {
+    width: 65%;
+  }
+}
+@media (max-width: 600px) {
+  .talim .chanse-cards {
+    padding-left: 0;
+  }
+  .talim .chanse-cards .chanse-card {
+    flex-direction: column;
+  }
 }

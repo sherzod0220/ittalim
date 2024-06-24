@@ -1,0 +1,232 @@
+.talim{
+    width: 100%;
+    padding-bottom: 100px;
+    .talim-info{
+        width: 100%;
+        border-top: 2px solid rgba(128, 128, 128, 0.233);
+        display: flex;
+        gap: 30px;
+        padding: 30px 0;
+        .about-name{
+            width: 30%;
+            .about-name__text{
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                span{
+                    width: 22px;
+                    min-width: 22px;
+                    height: 22px;
+                    border-radius: 50%;
+                    background-color: #184AFB;
+                }
+                p{
+                    font-size: 22px;
+                    font-family: monospace;
+                }
+            }  
+        }
+        .about-info{
+            h1{
+                text-transform: uppercase;
+            }
+        }
+    }
+    .talim-items{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        .talim-item{
+            border: 1px solid rgba(128, 128, 128, 0.349);
+            border-radius: 10px;
+            padding: 20px;
+            display: flex;
+            flex-direction:  column;
+            gap: 20px;
+            h3{
+                font-weight: 100;
+                font-size: 24px;
+            }
+            img{
+                width: 80%;
+            }
+            ul{
+                li{
+                    a{
+                        display: flex;
+                        gap: 15px;
+                        color: #184AFB;
+                    }
+                }
+            }
+        }
+    }
+    .talim-cards{
+        width: 100%;
+        padding-left: 32%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        row-gap: 50px;
+        .talim-card{
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            align-items: start;
+            padding-bottom: 30px;
+            border-bottom: 1px solid rgba(128, 128, 128, 0.411);
+            span{
+                img{
+                    width: 60%;
+                }
+                width: 80px;
+                height: 80px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #F5F5F5;
+            }
+            .imkoniyatlar1{
+                border-radius: 15px;
+            }
+            .imkoniyatlar2{
+                border-radius: 25px 10px;
+            }
+            .imkoniyatlar3{
+                border-radius: 25px;
+            }
+            .imkoniyatlar4{
+                border-radius: 50%;
+            }
+            p{
+                font-size: 18px;
+                color: #2E303899;
+            }
+        }
+    }
+    .talim-boxes{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        .talim-box{
+            background-color: #F5F5F5;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            padding: 25px;
+            gap: 30px;
+            img{
+                width: 40%;
+                cursor: pointer;
+            }
+            .talim-box__text{
+                width: 100%;
+                display: flex;
+                gap: 20px;
+            }
+        }
+    }
+    .chanse-cards{
+        width: 100%;
+        padding-left: 32%;
+        display: flex;
+        flex-direction:  column;
+        gap: 30px;
+        .chanse-card{
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            border-radius: 10px;
+            border: 2px solid rgba(128, 128, 128, 0.233);
+            padding: 25px 15px;
+            .chanse-card__img{
+                width: 30%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-width: 200px;
+                img{
+                    width: 90%;
+                }
+            }
+            .chanse-card__info{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 20px;
+            }
+        }
+    }
+    .xalqaro-items{
+        display: flex;
+        .xalqaro-img{
+            width: 60%;
+            img{
+                width: 100%;
+                border-radius: 15px;
+            }
+        }
+        .xalqaro-info{
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            .xalqaro-info__item{
+                height: 50%;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+        }
+    }
+}
+@media(max-width:992px){
+    .talim{
+        .chanse-cards{
+            padding-left: 0;
+        }
+    }
+}
+
+
+@media(max-width:768px){
+    .talim{
+        .talim-info{
+            flex-direction: column;
+            .about-info{
+                h1{
+                    font-size: 23px;
+                }
+            }
+        }
+        .talim-items{
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .talim-cards , .talim-boxes{
+            padding-left: 0;
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .talim-boxes{
+            .talim-box{
+                img{
+                    width: 65%;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:600px){
+    .talim{
+        .chanse-cards{
+            padding-left: 0;
+            .chanse-card{
+            flex-direction: column;
+
+           }
+        }
+    }
+}

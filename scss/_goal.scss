@@ -1,13 +1,14 @@
 .goal{
+    margin-bottom: 100px;
     width: 100%;
     .goal-info{
         width: 100%;
         border-top: 2px solid rgba(128, 128, 128, 0.233);
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        display: flex;
         gap: 30px;
         padding: 30px 0;
         .about-name{
+            width: 30%;
             .about-name__text{
                 display: flex;
                 align-items: center;
@@ -24,11 +25,62 @@
                 }
             }      
         }
+        .goal-info__title{
+            text-transform: uppercase;
+        }
     }
     .goal-main{
         width: 100%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr 2fr);
-        
+        display: flex;
+        gap: 30px;
+        .goal-main__left{
+            width: 30%;
+        }
+        .goal-main__right{
+            width: 70%;
+            display: flex;
+            gap: 30px;
+            .goal-main__right__img{
+                padding: 40px 0;
+                width: 25%;
+                background-color: #F5F5F5;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 70%;
+                }
+            }
+            .goal-main__right__items{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                .goal-main__right__item{
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 30px;
+                    p{
+                        font-size: 16px;
+                        font-family: monospace;
+                    }
+                    .goal-btn{
+                        padding: 5px 20px;
+                        border-radius: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1124px){
+    .goal{
+        .goal-mainn{
+            .goal-main__right{
+                .goal-main__right__items{
+                    gap: 2px;
+                }
+            }
+        }
     }
 }

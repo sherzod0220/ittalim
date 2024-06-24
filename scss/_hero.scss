@@ -11,8 +11,9 @@
         gap: 20px;
         h1{
             width: 50%;
-            font-size: 56px;
+            font-size: 50px;
             padding-right: 10%;
+            text-transform: uppercase;
         }
         p{
             width: 50%;
@@ -35,7 +36,7 @@
         .hero-text{
             flex-direction: column;
             h1{
-                font-size: 44px;
+                font-size: 40px;
                 width: 100%;
             }
             p{
@@ -51,7 +52,7 @@
         .hero-text{
             flex-direction: column;
             h1{
-                font-size: 34px;
+                font-size: 28px;
                 width: 100%;
             }
             p{
