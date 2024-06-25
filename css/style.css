@@ -670,6 +670,119 @@
     align-items: center;
   }
 }
+.kirish {
+  width: 100%;
+  display: flex;
+  margin-bottom: 50px;
+  gap: 15px;
+}
+.kirish .kirish-img {
+  width: 30%;
+}
+.kirish .kirish-img img {
+  width: 100%;
+  border-radius: 10px;
+}
+.kirish .kirish-info {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  background-color: #F5F5F5;
+  border-radius: 10px;
+  padding: 20px;
+}
+.kirish .kirish-info h1 {
+  font-size: 32px;
+  text-transform: uppercase;
+}
+.kirish .kirish-info .konus-info__btn {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  justify-content: space-between;
+}
+.kirish .kirish-info .konus-info__btn p {
+  width: 70%;
+  color: rgba(46, 48, 56, 0.6);
+  font-size: 18px;
+  font-family: monospace;
+}
+.kirish .kirish-info .konus-info__btn button {
+  padding: 5px 40px;
+  background-color: #184AFB;
+  color: white;
+  border: none;
+  border-radius: 40px;
+}
+
+@media (max-width: 1100px) {
+  .kirish .kirish-info {
+    gap: 10px;
+  }
+  .kirish .kirish-info h1 {
+    font-size: 26px;
+  }
+  .kirish .kirish-info .konus-info__btn p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 992px) {
+  .kirish .kirish-img {
+    width: 40%;
+    min-width: 300px;
+  }
+  .kirish .kirish-info {
+    width: 60%;
+    gap: 5px;
+    padding: 10px;
+  }
+  .kirish .kirish-info h1 {
+    font-size: 22px;
+    width: 100%;
+  }
+  .kirish .kirish-info .konus-info__btn {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 15px;
+  }
+  .kirish .kirish-info .konus-info__btn p {
+    font-size: 14px;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .kirish {
+    flex-direction: column;
+  }
+  .kirish .kirish-img {
+    width: 100%;
+    min-width: 300px;
+  }
+  .kirish .kirish-info {
+    width: 100%;
+    gap: 5px;
+    padding: 20px 10px;
+    align-items: center;
+  }
+  .kirish .kirish-info h1 {
+    font-size: 22px;
+    width: 100%;
+    text-align: center;
+  }
+  .kirish .kirish-info .konus-info__btn {
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+  .kirish .kirish-info .konus-info__btn p {
+    font-size: 14px;
+    width: 100%;
+  }
+}
 .partner {
   width: 100%;
   padding-top: 100px;
