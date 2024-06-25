@@ -12,14 +12,14 @@
         border: none;
         font-size: 18px;
         font-family: monospace;
-        border: 2px solid #CCCCCC;
+        border: 1px solid #CCCCCC;
         background-color: transparent;
         color: #184AFB;
         transition: 0.5s;
         &:hover{
             background-color: #184AFB;
             color: white;
-            border: 2px solid transparent;
+            border: 1px solid transparent;
         }
     }
     i{
@@ -36,6 +36,10 @@
     padding-left: 20px;
     padding-right: 20px;
 }
+.leftpadding{
+    width: 100%;
+    padding-left: 32%;
+}
 @media(min-width:768px){
     .container1{
         padding-left: 50px;
@@ -46,6 +50,12 @@
     .container1{
         padding-left: 70px;
         padding-right: 70px;
+    }
+}
+@media(max-width:992px){
+    .leftpadding{
+        padding-left: 0;
+
     }
 }
 @media(min-width:1260px){

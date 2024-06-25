@@ -19,6 +19,9 @@
                 display: none;
                 a{
                     color: #828388;
+                    &:focus{
+                        color: #184AFB;
+                    }
                 }
             }
         }
