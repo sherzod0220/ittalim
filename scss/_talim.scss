@@ -161,24 +161,41 @@
     }
     .xalqaro-items{
         display: flex;
+        gap: 30px;
         .xalqaro-img{
-            width: 60%;
+            width: 65%;
             img{
                 width: 100%;
                 border-radius: 15px;
             }
         }
         .xalqaro-info{
-            width: 40%;
+            width: 35%;
             display: flex;
             flex-direction: column;
-            height: 100%;
+            gap: 20px;
             .xalqaro-info__item{
+                border-radius: 10px;
+                border: 2px solid rgba(128, 128, 128, 0.233);
                 height: 50%;
                 padding: 20px;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+                p{
+                    font-size: 18px;
+                    font-family: monospace;
+                }
+                button{
+                    padding: 5px 30px;
+                    border-radius: 30px;
+                    font-size: 18px;
+                    background-color: rgba(128, 128, 128, 0.233);
+                    border: none;
+                    &:hover{
+                        background-color: #184AFB;
+                    }
+                }
             }
         }
     }
@@ -187,6 +204,23 @@
     .talim{
         .chanse-cards{
             padding-left: 0;
+        }
+        .xalqaro-items{
+            flex-direction: column;
+            .xalqaro-img{
+                width: 100%;
+                img{
+                    width: 100%;
+                }
+            }
+            .xalqaro-info{
+                flex-direction: row;
+                width: 100%;
+                .xalqaro-info__item{
+                    width: 50%;
+                    gap: 30px;
+                }
+            }
         }
     }
 }
@@ -225,8 +259,19 @@
             padding-left: 0;
             .chanse-card{
             flex-direction: column;
-
            }
+        }
+        .xalqaro-items{
+            flex-direction: column;
+            .xalqaro-info{
+                flex-direction: column;
+                width: 100%;
+                .xalqaro-info__item{
+                    width: 100%;
+                    gap: 30px;
+                    align-items: center;
+                }
+            }
         }
     }
 }
