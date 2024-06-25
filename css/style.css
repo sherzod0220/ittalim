@@ -883,10 +883,10 @@ footer .footer-border {
   padding-top: 40px;
 }
 footer .footer-logo {
-  width: 30%;
+  width: 20%;
 }
 footer .footer-info {
-  width: 70%;
+  width: 80%;
 }
 footer .footer-info .footer-info__top {
   padding-bottom: 40px;
@@ -951,4 +951,38 @@ footer .footer-info .footer-info__bottom button:hover {
   background-color: white;
   border: 2px solid #56585E;
   color: #56585E;
+}
+
+@media (max-width: 992px) {
+  footer .footer-border {
+    flex-direction: column;
+    gap: 40px;
+  }
+  footer .footer-info {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  footer .footer-border {
+    flex-direction: column;
+    gap: 40px;
+  }
+  footer .footer-info {
+    width: 100%;
+  }
+  footer .footer-info .footer-info__top {
+    flex-direction: column;
+    gap: 30px;
+  }
+  footer .footer-info .footer-info__top ul {
+    gap: 10px;
+    width: 100%;
+  }
+  footer .footer-info .footer-info__top .footer-info__connects {
+    width: 100%;
+    gap: 10px;
+  }
+  footer .footer-info .footer-info__bottom {
+    flex-direction: column;
+  }
 }
